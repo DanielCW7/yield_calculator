@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Concrete Calculator </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <main>
+
+            <div class="container">
+                <form name="calculator" onsubmit="return volume()">
+                    <fieldset>
+                        <h1> Concrete yield calculator </h1>
+
+                        <div id="input_container">
+                            <div>
+                                <label for="length"> Length (feet) </label><br>
+                                <input type="text" placeholder="please type a number" id="length"/>
+                            </div><br>
+
+                            <div>
+                                <label for="width"> Width (feet) </label><br>
+                                <input type="text" placeholder="please type a number" id="width"/>
+                            </div><br>
+
+                            <div>
+                                <label> Depth (inches) </label><br>
+                                <input type="text" placeholder="please type a number" id="depth"/>
+                            </div>
+                        </div>
+
+                            <div>
+                                <legend>
+                                    <h2> Result: </h2>
+                                </legend>
+                                    <p id="cubic_ft"></p>
+                                    <p id="cubic_yd"></p>
+                            </div>
+
+                            <div>
+                                <label> Total: </label>
+                                    <p id="total"></p>
+                            </div>
+
+                            <div>
+                                <label> +10% waste: </label>
+                                    <p id="waste"></p>
+                            </div>
+
+                            <div>
+                                <label> Grand Total: </label>
+                                    <p id="grandTotal"></p>
+                            </div>
+
+                            <button value="submit" type="button" onclick="volume()"> Calculate </button>
+                    </form>
+                </fieldset>
+            </div>
+
+        </main>
+    </body>
+
+    <script type="text/javascript" src="base.js"></script>
+</html>
