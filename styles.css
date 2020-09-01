@@ -32,7 +32,7 @@ fieldset {
 }
 
 #input_container {
-    width: 40%;
+    width: 80%;
     margin: auto;
 }
 
@@ -66,14 +66,8 @@ button {
 }
 
 
-@media (min-width: 768px) {
-    form {
-        width: 80%;
-    }
-}
-
 @media (min-width: 1024px) {
     form {
-        width: 60%;
+        width: 40%;
     }
 }
